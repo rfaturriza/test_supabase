@@ -14,8 +14,8 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   // state variables
   bool isLoading = false;
-  String email = 'rfaturriza@gmail.com';
-  String password = '12345678';
+  String email = '';
+  String password = '';
 
   Future<bool> signInWithKeycloak() async {
     return await supabase.auth.signInWithOAuth(
